@@ -1,0 +1,98 @@
+/* design geral da pagina */
+
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Lato", sans-serif
+}
+
+.w3-bar, h1, button {
+    font-family: "Montserrat", sans-serif;
+}
+
+.fa-anchor, .fa-coffee {
+    font-size: 200px
+}
+
+.navigation {
+    width: 70%;
+}
+
+/* fim */
+
+/* HEADER */
+
+/* DropDown */
+
+.dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    
+}
+
+.dropdown:hover {
+    background-color: white;
+    color: black;
+}
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    opacity: 0.9;
+    top: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: -1;
+    left: 0px;
+    right: 0px;
+    cursor: pointer;
+   
+}
+
+/* Links inside the dropdown */
+
+.dropdown-content i {
+    color: black;
+    padding: 15px 20px;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content i:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* FIM DO HEADER */
+
+/* Sections */
+
+/* Projetos */
+
+/* fotos */
+
+.projeto_fotos {
+    width: 300px;
+    height: 250px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
