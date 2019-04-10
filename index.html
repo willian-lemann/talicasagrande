@@ -1,181 +1,200 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ShowRoom</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" media="screen" href="index.css">
-	<link rel="stylesheet" href="/node_modules/bootstrap/dist/js/bootstrap.min.js">
-	<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-
+<title>Show Room Casas</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="index.css">
 
 <body>
-	<!-- Navbar -->
+
+
+	<!-- Navbar (sit on top) -->
 	<div class="w3-top">
-		<div style="height: 300px; max-height: 50px;position: relative; overflow: visible;"
-			class="w3-bar w3-red w3-card w3-left-align w3-large">
-			<a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red"
-				href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i
-					class="fa fa-bars"></i></a>
-			<a class="w3-bar-item w3-button w3-padding-large w3-white" onclick="window.scrollTo(0,0)">Home</a>
-			<a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Missão</a>
-			<a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Visão</a>
-			<a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Valores</a>
-			<a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">
-				Galeria</a>
+		<div class="w3-bar w3-white w3-wide w3-card">
+			<a onclick="getValues('home');" class="w3-bar-item w3-button header"><b>ShowRoom</b> Casas</a>
+			<!-- Float links to the right. Hide them on small screens -->
+			<div class="w3-right w3-hide-small  ">
+				<a onclick="getValues('projetos');" class="w3-bar-item w3-button header">Projetos</a>
+				<a onclick="getValues('sobre');"class="w3-bar-item w3-button header">Sobre nós</a>
+				<a onclick="getValues('contato');" class="w3-bar-item w3-button header">Contato</a>
 
-			<div class="dropdown w3-bar-item w3-hide-small w3-padding-large">
-				<a class="dropbtn">Faça seu orçamento</a>
-				<div class="dropdown-content">
-					<i>
-						<a href="https://web.whatsapp.com/send?phone=5551991896513&amp;text=Olá..."> <img
-								style="position: relative;height: 28px; left: 20px;"
-								src="/imagens/icons/whatsapp-logo.png">
-							<p style="float: left; top: 20px;font-style: normal;">Pelo WhatsApp</p>
-						</a>
-					</i>
-
-					<i>
-						<img style="position: relative;height: 28px; left: 28px;"
-							src="/imagens/icons/facebook-logo.png">
-						<p style="float: left; top: 20px;font-style: normal;">Pelo Facebook</p>
-					</i>
-					<i>
-						<img style="position: relative;height: 28px; left: 24px;" src="/imagens/icons/instagram.png">
-						<p style="float: left; top: 20px;font-style: normal;">Pelo Instagram</p>
-					</i>
-				</div>
 			</div>
-
-
-
-		</div>
-
-		<!-- Navbar on small screens -->
-		<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-			<a class="w3-bar-item w3-button w3-padding-large">Missão</a>
-			<a class="w3-bar-item w3-button w3-padding-large">Visão</a>
-			<a class="w3-bar-item w3-button w3-padding-large">Valores</a>
-			<a class="w3-bar-item w3-button w3-padding-large">Galeria</a>
 		</div>
 	</div>
-
-
+	<script src="index.js"></script>
 	<!-- Header -->
-	<header class="w3-display-container w3-content w3-wide" style="max-width:1900px;">
-		<img class="w3-image" src="/imagens/fotos/fundoheader.jpg">
-		<div>
-			<!-- <img style="opacity: 0.5; transform: scale(-1);" src="/imagens/icons/arrow-point-to-right.png"> -->
-			<!-- <img style="opacity: 0.5; padding: 10px 50px;" src="/imagens/icons/arrow-point-to-right.png"> -->
+	<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+		<img class="w3-image" src="/imagens/fotos/fundoheader.jpg" alt="Architecture" width="1500" height="800">
+		<div class="w3-display-middle w3-margin-top w3-center">
+			<h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>ShowRoom</b></span>
+				<span class="w3-hide-small w3-text-light-grey; w3-opacity-min"
+					style="color: black; font-weight: bold">Casas</span></h1>
+		</div>
+
+
+
+		<div class="dropdown w3-bar-item w3-hide-small w3-padding-large">
+			<a class="dropbtn">Faça seu orçamento</a>
+			<div class="dropdown-content">
+				<i>
+					<a href="https://web.whatsapp.com/send?phone=5551991896513&amptext=Olá..."> <img
+							style="position: relative;height: 28px; left: 20px;" src="/imagens/icons/whatsapp-logo.png">
+						<p style="float: left; top: 20px;font-style: normal;">Pelo WhatsApp</p>
+					</a>
+				</i>
+
+				<i>
+					<img style="position: relative;height: 28px; left: 28px;" src="/imagens/icons/facebook-logo.png">
+					<p style="float: left; top: 20px;font-style: normal;">Pelo Facebook</p>
+				</i>
+				<i>
+					<img style="position: relative;height: 28px; left: 24px;" src="/imagens/icons/instagram.png">
+					<p style="float: left; top: 20px;font-style: normal;">Pelo Instagram</p>
+				</i>
+			</div>
 		</div>
 	</header>
 
-	<!-- First Grid -->
-	<div class="w3-row-padding w3-padding-64 w3-container">
-		<div class="">
-			<div class="container-fluid">
-				<h1 style="text-align: center;">Empresa</h1>
-				<h5 class="w3-content">
-					consequatullamco laboris nisi ut aliquip ex ea commodo consequatullamco laboris nisi ut aliquip ex
-					ea commodo consequatullamco laboris nisi ut aliquip ex ea commodo consequatullamco laboris nisi ut
-					aliquip ex ea commodo consequatullamco laboris nisi ut aliquip ex ea commodo consequatullamco
-					laboris nisi ut aliquip ex ullamco laboris nisi ut aliquip ex ea commodo consequatullamco laboris
-					nisi ut aliquip ex ea commodo consequatea commodo consequatullamco laboris nisi ut aliquip ex ea
-					commodo
-					consequatullamco laboris nisi ut aliquip ex ea commodo</h5>
+	<!-- Page content -->
+	<div class="w3-content w3-padding" style="max-width:1564px">
+
+		<!-- Project Section -->
+		<div class="w3-container w3-padding-32" id="projetos">
+			<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projetos</h3>
+		</div>
+
+		<div class="w3-row-padding">
+			<div class="w3-col l3 m6 w3-margin-bottom">
+				<div class="w3-display-container">
+					<div class="w3-display-topleft w3-black w3-padding">Summer House</div>
+					<img src="/imagens/fotos/foto7.jpg" height="200px" alt="House" style="width:100%">
+				</div>
+			</div>
+			<div class="w3-col l3 m6 w3-margin-bottom">
+				<div class="w3-display-container">
+					<div class="w3-display-topleft w3-black w3-padding">Brick House</div>
+					<img src="/imagens/fotos/foto6.jpg" height="200px" alt="House" style="width:100%">
+				</div>
+			</div>
+			<div class="w3-col l3 m6 w3-margin-bottom">
+				<div class="w3-display-container">
+					<div class="w3-display-topleft w3-black w3-padding">Renovated</div>
+					<img src="/imagens/fotos/foto2.jpg" height="200px" alt="House" style="width:100%">
+				</div>
+			</div>
+			<div class="w3-col l3 m6 w3-margin-bottom">
+				<div class="w3-display-container">
+					<div class="w3-display-topleft w3-black w3-padding">Barn House</div>
+					<img src="/imagens/fotos/foto9.jpg" height="200px" alt="House" style="width:100%">
+				</div>
 			</div>
 		</div>
-	</div>
 
-
-	<!-- Projects -->
-	<div class="w3-row-padding w3-padding-64 w3-container">
-		<div class="container">
-			<h1 class="container">Projetos</h1>
-			<div class="w3-padding-32 w3-container">
-				<img class="projeto_fotos" src="/imagens/fotos/foto32.jpg" alt="">
-				<img class="projeto_fotos" src="/imagens/fotos/foto32.jpg" alt="">
-				<img class="projeto_fotos" src="/imagens/fotos/foto32.jpg" alt="">
-				<img class="projeto_fotos" src="/imagens/fotos/foto32.jpg" alt="">
+		<div class="w3-row-padding">
+			<div class="w3-col l3 m6 w3-margin-bottom">
+				<div class="w3-display-container">
+					<div class="w3-display-topleft w3-black w3-padding">Summer House</div>
+					<img src="/imagens/fotos/foto10.jpg" height="200px" alt="House" style="width:99%">
+				</div>
+			</div>
+			<div class="w3-col l3 m6 w3-margin-bottom">
+				<div class="w3-display-container">
+					<div class="w3-display-topleft w3-black w3-padding">Brick House</div>
+					<img src="/imagens/fotos/foto16.jpg" height="200px" height="" alt="House" style="width:99%">
+				</div>
+			</div>
+			<div class="w3-col l3 m6 w3-margin-bottom">
+				<div class="w3-display-container">
+					<div class="w3-display-topleft w3-black w3-padding">Renovated</div>
+					<img src="/imagens/fotos/foto22.jpg" height="200px" alt="House" style="width:99%">
+				</div>
+			</div>
+			<div class="w3-col l3 m6 w3-margin-bottom">
+				<div class="w3-display-container">
+					<div class="w3-display-topleft w3-black w3-padding">Barn House</div>
+					<img src="/imagens/fotos/foto21.jpg" height="200px" alt="House" style="width:99%">
+				</div>
 			</div>
 		</div>
-	</div>
 
+		<!-- About Section -->
+		<div class="w3-container w3-padding-32" id="sobre">
+			<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Empresa</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+				dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+				ex ea commodo consequat. Excepteur sint
+				occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+				consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+				ad minim veniam, quis nostrud exercitation ullamco
+				laboris nisi ut aliquip ex ea commodo consequat.
+			</p>
+		</div>
 
-
-
-	<!-- Second Grid -->
-	<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-		<div>
-			<div class="container">
-				<h1 class="offset-9">Missão</h1>
-				<h5 class="smallscreencontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-					eiusmod
-					tempor
-					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-					ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+		<div class="w3-row-padding w3-grayscale">
+			<div class="w3-col l3 m6 w3-margin-bottom">
+				<img src="/w3images/team2.jpg" alt="John" style="width:100%">
+				<h3>John Doe</h3>
+				<p class="w3-opacity">CEO & Founder</p>
+				<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+				<p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+			</div>
+			<div class="w3-col l3 m6 w3-margin-bottom">
+				<img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+				<h3>Jane Doe</h3>
+				<p class="w3-opacity">Architect</p>
+				<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+				<p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+			</div>
+			<div class="w3-col l3 m6 w3-margin-bottom">
+				<img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
+				<h3>Mike Ross</h3>
+				<p class="w3-opacity">Architect</p>
+				<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+				<p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+			</div>
+			<div class="w3-col l3 m6 w3-margin-bottom">
+				<img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
+				<h3>Dan Star</h3>
+				<p class="w3-opacity">Architect</p>
+				<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+				<p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
 			</div>
 		</div>
-	</div>
 
-	<!-- Third grid -->
-	<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-		<div>
-			<div class="container">
-				<h1>Visão</h1>
-				<h5 class="smallscreencontent">Lorem ipsum dolor sit amet,
-					consectetur
-					adipiscing elit, sed do eiusmod
-					tempor
-					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-					ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
-			</div>
+		<!-- Contact Section -->
+		<div class="w3-container w3-padding-32" id="contato">
+			<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+			<p>Lets get in touch and talk about your next project.</p>
+			<form action="/action_page.php" target="_blank">
+				<input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+				<input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+				<input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+				<input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
+				<button class="w3-button w3-black w3-section" type="submit">
+					<i class="fa fa-paper-plane"></i> SEND MESSAGE
+				</button>
+			</form>
 		</div>
-	</div>
 
-	<!-- 4th grid -->
+		<!-- Image of location/map -->
+		<div id="mapa" class="w3-container">
 
-
-	<!-- Third grid -->
-	<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-		<div>
-			<div class="container ">
-				<h1 class="offset-9">Valores</h1>
-				<h5 class="smallscreencontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-					eiusmod
-					tempor
-					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-					ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
-			</div>
+			<script async defer
+				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxM7XOgnus2OWPAGnT0rdxyDzNwEjIgTM&callback=inicializar">
+				</script>
 		</div>
-	</div>
 
-
-
-
-
-
-
-
-
-	<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-		<h1 class="w3-margin w3-xlarge">Faça seu orçamento</h1>
+		<!-- End page content -->
 	</div>
 
 
 	<!-- Footer -->
-	<footer class="w3-container w3-padding-64 w3-center w3-opacity">
-		<p>&copy 2019 por ShowRoom Casas de madeira. Developed by Willian Lemann</p>
+	<footer class="w3-center w3-black w3-padding-16">
+		<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+				class="w3-hover-text-green">w3.css</a></p>
 	</footer>
 
-	<script src="/mainPage/index.js"></script>
 </body>
 
 </html>

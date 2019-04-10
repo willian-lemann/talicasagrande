@@ -8,15 +8,60 @@ function myFunction() {
     }
 }
 
+//Map Api
+function inicializar() {
 
-//mostrando fotos na tela com javascript
-function mudaFoto(escolhefoto) {
-    var img = '';
-    var url = '/imagens/fotos/';
-    img += '<img src=' + url + '' + escolhefoto + '.jpg>';
-    document.getElementById('fotos').innerHTML = img;
+    var coordenadas = { lat: -29.993487, lng: -51.071185 };
+
+    var mapa = new google.maps.Map(document.getElementById('mapa'), {
+        zoom: 15,
+        center: coordenadas
+    });
+
+    var marker = new google.maps.Marker({
+        position: coordenadas,
+        map: mapa,
+        title: 'ShowRoomCasas'
+    });
 }
 
-function test(){
-    
+
+
+
+function getValues(id) {
+    let value = document.getElementById(id);
+
+    switch (id) {
+        case 'projetos':
+            targetFromTop = value.offsetTop;
+            window.scroll({
+                top: targetFromTop,
+                behavior: 'smooth'
+            })
+            break;
+
+        case 'sobre':
+            targetFromTop = value.offsetTop;
+            window.scroll({
+                top: targetFromTop,
+                behavior: 'smooth'
+            })
+            break;
+
+        case 'contato':
+            targetFromTop = value.offsetTop;
+            window.scroll({
+                top: targetFromTop,
+                behavior: 'smooth'
+            })
+            break;
+
+        case 'home':
+            targetFromTop = value.offsetTop;
+            window.scroll({
+                top: targetFromTop,
+                behavior: 'smooth'
+            })
+
+    }
 }
