@@ -76,10 +76,15 @@
     width: 100%;
     list-style: none;
     text-decoration: none;
-    outline: none;
+    
 }
 
 .smalldropdown-content ul li:hover {
     text-decoration: none;
+   background-color:gray; 
+   outline-offset: 0;
+}
+.smalldropdown-content ul li:active{
+    outline: 0;
     outline: none;
 }
