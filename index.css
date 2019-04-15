@@ -62,6 +62,7 @@
     cursor: pointer;
     display: none;
     text-decoration: none;
+    outline: none;
     
 }
 .menuicon{
@@ -74,8 +75,11 @@
 .smalldropdown-content ul {
     width: 100%;
     list-style: none;
+    text-decoration: none;
+    outline: none;
 }
 
 .smalldropdown-content ul li:hover {
     text-decoration: none;
+    outline: none;
 }
