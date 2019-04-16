@@ -39,7 +39,7 @@
 	<div class="keyclass">
 		<div class="w3-top smalldropdown">
 			<div class="w3-wide w3-white w3-card ">
-				<a class="w3-button"><b>ShowRoom</b> Casas</a>
+				<a onclick="getValues('home');" class="w3-button"><b>ShowRoom</b> Casas</a>
 				<div class="menuicon">
 					<img class="w3-right" style="position: relative; top:-35px;" src="imagens/icons/menu-button.png"
 						alt="">
@@ -62,7 +62,7 @@
 
 						<div class="subcontent">
 							<li>
-								<a href="https://api.whatsapp.com/send?phone5551999980360">Pelo WhatsApp
+								<a href="https://api.whatsapp.com/send?phone=5551993562223">Pelo WhatsApp
 									<img class="icons" src="imagens/icons/whatsapp-logo.png"
 										alt="foto do icone whatsapp">
 
@@ -218,29 +218,51 @@
 			<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contato</h3>
 			<h4><b>ShowRoom</b> Casas</h4>
 			<p>Casas em madeira e alvenaria</p>
-			<p><i style="cursor: pointer;" onclick="getValues('mapa')" class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Porto Alegre, RS</p>
-			<p><i onclick="getValues('telefone')" id="telefone" style="cursor: pointer;" class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i><a href="51999980360">51 999980360</a>
+			<p><i style="cursor: pointer;" onclick="getValues('mapa')"
+					class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Porto Alegre, RS</p>
+			<p><i onclick="getValues('telefone')" style="cursor: pointer;"
+					class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"><a href="5133195251"></a></i>51 3319-5251
 			</p>
-			<p><i style="cursor: pointer;" class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: showroomcasas@hotmail.com</p>
+			<p><i style="cursor: pointer;" class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email:
+				showroomcasas@hotmail.com</p>
 
 		</div>
 
 
 		<div class="w3-container w3-padding-32" id="contato">
-			<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contato</h3>
+			<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Mande seu projeto</h3>
 			<p>Vamos falar sobre o próximo projeto que você quer realizar.</p>
 			<form action="/action_page.php" target="_blank">
-				<input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+				<input class="w3-input w3-border" type="text" placeholder="Nome" required name="Name">
 				<input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
-				<input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
-				<input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
-				<button class="w3-button w3-black w3-section" type="submit">
-					<i class="fa fa-paper-plane"></i> SEND MESSAGE
+				<input class="w3-input w3-section w3-border" type="text" placeholder="Titulo" required name="Subject">
+				<input class="w3-input w3-section w3-border" type="text" placeholder="Descrição" required
+					name="Comment">
+				<button style="border-radius: 10px;" class="w3-button w3-black w3-section" type="submit">
+					<i class="fa fa-paper-plane"></i> Enviar projeto
 				</button>
+				<label class="w3-card w3-button" style="border-radius: 10px;" for='file'>Anexar arquivo</label>
+				<input id="file" type="file" name="file">
+				<style>
+					input[type='file'] {
+						display: none;
+
+					}
+
+					label {
+						background-color: yellow;
+						color: black;
+					}
+				</style>
+
 			</form>
 		</div>
 
 		<!-- Image of location/map -->
+		<div class="w3-right">
+			<p>Chegue mais rápido até nós usando<b> Waze</b> <img onclick="getValues('waze')" style="cursor: pointer;"
+					src="imagens/icons/waze.png" alt="icone do waze"></p>
+		</div>
 		<div id="mapa" class="w3-container">
 
 			<script async defer
@@ -258,7 +280,7 @@
 				href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
 				class="w3-hover-text-green"></a></p>
 	</footer>
-	
+
 </body>
 
 </html>

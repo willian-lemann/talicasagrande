@@ -54,18 +54,23 @@ function getValues(id) {
                 top: targetFromTop,
                 behavior: 'smooth'
             })
-
+            break;
         case 'mapa':
             targetFromTop = value.offsetTop;
-            open('https://waze.com/ul');
             window.scroll({
                 top: targetFromTop,
                 behavior: 'smooth'
             })
 
-        case 'telefone':
-            open('tel:51 999980360')
+            break;
+
+        case 'waze':
+            open('https://waze.com/ul');
+
+            break;
     }
+
+
 
 
 }
