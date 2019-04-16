@@ -22,7 +22,7 @@ function inicializar() {
 
 function getValues(id) {
     let value = document.getElementById(id);
-console.log(value)
+    console.log(value)
     switch (id) {
         case 'projetos':
             targetFromTop = value.offsetTop;
@@ -62,7 +62,12 @@ console.log(value)
                 top: targetFromTop,
                 behavior: 'smooth'
             })
+
+        case 'telefone':
+            open('tel:51 999980360')
     }
+
+
 }
 
 
