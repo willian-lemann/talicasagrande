@@ -43,7 +43,7 @@ a{
     line-height: 50px;
     padding: 15px;
     width: 100%;
-    z-index: -1
+    z-index: -1;
     cursor: pointer;
     display: none;
     text-decoration: none;

@@ -22,7 +22,7 @@ function inicializar() {
 
 function getValues(id) {
     let value = document.getElementById(id);
-
+console.log(value)
     switch (id) {
         case 'projetos':
             targetFromTop = value.offsetTop;
@@ -55,13 +55,20 @@ function getValues(id) {
                 behavior: 'smooth'
             })
 
+        case 'mapa':
+            targetFromTop = value.offsetTop;
+            open('https://waze.com/ul');
+            window.scroll({
+                top: targetFromTop,
+                behavior: 'smooth'
+            })
     }
 }
 
 
 const valueScreen = document.body.offsetWidth;
-if(valueScreen < 1200){
-    window.addEventListener('load', ()=>{
+if (valueScreen < 1200) {
+    window.addEventListener('load', () => {
         let smallscreen = document.querySelector('.keyclass');
         let bigscreen = document.getElementById('bigscreen');
 
@@ -69,4 +76,7 @@ if(valueScreen < 1200){
         bigscreen.style.display = 'none'; //makes the display disappear
     })
 }
+
+
+
 
