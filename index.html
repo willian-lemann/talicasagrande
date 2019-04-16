@@ -6,11 +6,11 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="index.css">
 
-<body onload="getValueOfScreen();">
+<body>
 	<script src="index.js"></script>
 
 	<!-- Navbar (sit on top) -->
-	<div class="w3-top">
+	<div class="w3-top" id="bigscreen">
 		<div class="w3-bar w3-white w3-wide w3-card">
 			<a onclick="getValues('home');" class="w3-bar-item w3-button  "><b>ShowRoom</b> Casas</a>
 			<a  onclick="getValues('projeto');" class="w3-bar-item w3-button ">Projetos</a>
@@ -33,39 +33,26 @@
 
 
 	<!-- For small screens -->
-	<script>
-			// Used to toggle the menu on small screens when clicking on the menu button
-			function getValueOfScreen() {
-				
-				var valueScreen = document.body.offsetWidth;
-				let smallscreen = document.querySelector('.keyclass');
-				console.log(valueScreen)
-				if(valueScreen < 1200){
-					smallscreen.classList.remove("keyclass");
-				}
-			 
-	}
-	
-		</script>
+  
 	<div class="keyclass">
-		<div class="w3-top">
-			<div class="w3-wide w3-white w3-card header">
+		<div class="w3-top smalldropdown">
+			<div class="w3-wide w3-white w3-card ">
 				<a class="w3-button"><b>ShowRoom</b> Casas</a>
 				<div class="menuicon">
-					<img style="position: relative; left:100px; top: 10px;" src="imagens/icons/menu-button.png" alt="">
+					<img class="w3-right" style="position: relative; top:-35px;" src="imagens/icons/menu-button.png" alt="">
 				</div>
 				<div class="smalldropdown-content">
 
 					<ul>
-						<li>
-							<a onclick="getValues('projetos');">Projetos</a>
-						</li>
-						<li>
-							<a onclick="getValues('sobre');">Sobre nós</a>
-						</li>
-						<li>
-							<a onclick="getValues('contato');">Contato</a>
-						</li>
+							<li>
+									<a onclick="getValues('projetos');">Projetos</a>
+								</li>
+								<li>
+									<a onclick="getValues('sobre');">Sobre nós</a>
+								</li>
+								<li>
+									<a onclick="getValues('contato');">Contato</a>
+								</li>
 						<li>
 							<a>Faça seu orçamento</a>
 						</li>
