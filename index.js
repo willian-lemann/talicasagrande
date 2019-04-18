@@ -18,8 +18,6 @@ function inicializar() {
 }
 
 
-
-
 function getValues(id) {
     let value = document.getElementById(id);
     console.log(value)
@@ -68,6 +66,22 @@ function getValues(id) {
             open('https://waze.com/ul');
 
             break;
+
+        case 'facebook':
+            open('https://www.facebook.com/Showroomcasas/');
+            break;
+
+        case 'whatsapp':
+            open('https://api.whatsapp.com/send?phone=5551993562223');
+            break;
+
+        case 'instagram':
+           let contentClass = document.getElementById('tag');
+         contentClass.style.display = "block";
+         let contentClass2 = document.getElementById('tag2');
+         contentClass2.style.display = "block";
+         document.body.style.backgroundColor = 'gray'
+            break;
     }
 
 
@@ -86,6 +100,8 @@ if (valueScreen < 1200) {
         bigscreen.style.display = 'none'; //makes the display disappear
     })
 }
+
+
 
 
 

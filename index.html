@@ -56,37 +56,49 @@
 						<li>
 							<a onclick="getValues('contato');">Contato</a>
 						</li>
-						<li>
-							<a class="subdropdown">Faça seu orçamento</a>
 
+						<div class="subdropdown">
+
+							<li>
+								<a>Faça seu orçamento</a>
+							</li>
 							<div class="subcontent">
-								<a href="https://api.whatsapp.com/send?phone=5551993562223">Pelo WhatsApp
-									<img class="icons" src="imagens/icons/whatsapp-logo.png"
-										alt="foto do icone whatsapp">
-
-								</a>
-
-
-								<a>Pelo Facebook
-									<img class="icons" src="imagens/icons/facebook-logo.png"
-										alt="foto do icone facebook">
-								</a>
-
-
-								<a href="https://www.instagram.com/showroomdecasas?r=nametag">Pelo Instagram
-									<img class="icons" src="imagens/icons/instagram.png" alt="foto do icone instagram">
-								</a>
+								<ul>
+									<li>
+										<a href="https://api.whatsapp.com/send?phone=5551993562223">Pelo WhatsApp
+											<img style="position: relative; left: 2px;" class="icons"
+												src="imagens/icons/whatsapp-logo.png" alt="foto do icone whatsapp">
+										</a>
+									</li>
+									<li>
+										<a>Pelo Facebook
+											<img style="position: relative; left: 6px;" class="icons"
+												src="imagens/icons/facebookicon.png" alt="foto do icone facebook">
+										</a>
+									</li>
+									<li>
+										<a href="https://www.instagram.com/showroomdecasas?r=nametag">Pelo Instagram
+											<img class="icons" src="imagens/icons/instagram.png"
+												alt="foto do icone instagram">
+										</a>
+									</li>
+									<ul>
 							</div>
-
-						</li>
-
-
+						</div>
 					</ul>
-				</div>
-			</div>
-		</div>
 
+				</div>
+
+			</div>
+
+
+
+
+		</div>
 	</div>
+
+
+
 
 
 
@@ -278,6 +290,22 @@
 
 	<!-- Footer -->
 	<footer class="w3-center w3-black w3-padding-16">
+
+		<img onclick="getValues('facebook');" class="footericons"
+			style="position: relative; left: 6px; cursor: pointer;" src="imagens/icons/facebook-logo.png"
+			alt="foto icone facebook">
+		<img class="footericons" style="position: relative; left: 6px; cursor: pointer;"
+			src="imagens/icons/linkedin.png" alt="foto do icone linkedin">
+		<img onclick="getValues('whatsapp');" class="footericons"
+			style="position: relative; left: 6px; cursor: pointer;" src="imagens/icons/whatsapp.png"
+			alt="foto do icone whatsapp">
+		<img onclick="getValues('instagram')" class="footericons" style="position: relative; left: 6px; cursor: pointer;"
+			src="imagens/icons/instagramicon.png" alt="foto do icone instagram">
+
+		<div id="tag" class="tagContent contentofthetag">
+			<img id="tag2" class="tagContent contentofthetag" src="imagens/icons/instagramTag.jpg" alt="tag do instagram">
+		</div>
+
 		<p>&copy 2019 por showroomcasas. Developed by Willian Lemann <a
 				href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
 				class="w3-hover-text-green"></a></p>
