@@ -82,23 +82,32 @@ function getValues(id) {
             break;
 
         case 'instagram':
+            const scren = document.body.offsetWidth;
 
             let contentClass = document.getElementById('tag');
             contentClass.style.display = "block";
             let contentClass2 = document.getElementById('tag2');
             contentClass2.style.display = "block";
             document.body.style.backgroundColor = 'gray'
+
+            //quando nao esta mobile
+            if (scren > 1200) {
+                contentClass.style.left = '530px';
+                contentClass2.style.left = '530px';
+            }
             break;
     }
 
     //
-    let sair = document.getElementById('sair');
-    let tag = document.getElementById('tag');
-    sair.addEventListener('click', function () {
-        tag.style.display = 'none';
-        document.body.style.backgroundColor = '';
-    })
-
+    const screen = document.body.offsetWidth;
+    if (screen > 1200) {
+        let sair = document.getElementById('sair');
+        let tag = document.getElementById('tag');
+        sair.addEventListener('click', function () {
+            tag.style.display = 'none';
+            document.body.style.backgroundColor = '';
+        })
+    }
 
 
 }

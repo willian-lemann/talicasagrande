@@ -165,7 +165,8 @@ a {
     top: -50px;
     border-radius: 10px;
     width: 100px;
-    opacity: 0.8;
+    opacity: 0.9;
     height: 50px;
     cursor: pointer;
+    z-index: -1;
 }
