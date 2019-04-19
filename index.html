@@ -324,9 +324,16 @@
 			</div>
 		</div>
 
-		<p>&copy 2019 por showroomcasas. Developed by Willian Lemann <a
+		<p>&copy 2019 por showroomcasas. Developed by Willian Lemann <img id="devlinkedin" style="cursor: pointer;;height: 16px; width: 16px;" src="imagens/icons/linkedin.png" alt="icone do linkedin do desenvolvedor do site"> <a
 				href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
 				class="w3-hover-text-green"></a></p>
+				<script>
+					//ao clicar no icone do linkedin do desenvolvedor
+					const devlinkedin = document.getElementById('devlinkedin');
+					devlinkedin.addEventListener('click', ()=>{
+						open('https://www.linkedin.com/in/willian-lemann-51a157161/');
+					})
+				</script>
 	</footer>
 
 </body>
