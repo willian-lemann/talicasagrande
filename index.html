@@ -18,18 +18,25 @@
 			<a onclick="getValues('projetos');" class="w3-bar-item w3-button ">Projetos</a>
 			<a onclick="getValues('sobre');" class="w3-bar-item w3-button  ">Sobre nós</a>
 			<a onclick="getValues('contato');" class="w3-bar-item w3-button  ">Contato</a>
-			<a class="w3-bar-item w3-button  ">Faça seu orçamento</a>
-
-			<!-- <div class="dropdown">
+			<div class="w3-bar-item w3-button dropdown">
+				<a>Faça seu orçamento</a>
 				<div class="dropContent">
-					<ul class="list">
-						<li><a>Pelo</a></li>
-						<li><a>Sobre nós</a></li>
-						<li><a>Contato</a></li>
+					<ul>
+						<li>
+							<a href="https://api.whatsapp.com/send?phone=5551993562223">Pelo WhatsApp</a>
+							<img class="icons iconsBigscreen" src="imagens/icons/whatsapp-logo.png" alt="icone do whatsapp">
+						</li>
+						<li>
+							<a href="https://www.facebook.com/Showroomcasas/">Pelo Facebook </a>
+							<img style="position: relative; left:12px;" class="icons iconsBigscreen" src="imagens/icons/facebookicon.png" alt="icone do facebook">
+						</li>
+						<li>
+							<a href="https://www.instagram.com/showroomdecasas?r=nametag">Pelo Instagram</a>
+							<img class="icons iconsBigscreen" src="imagens/icons/instagram.png" alt="icone do facebook">
+						</li>
 					</ul>
 				</div>
 			</div>
-		 -->
 		</div>
 	</div>
 
@@ -71,7 +78,7 @@
 										</a>
 									</li>
 									<li>
-										<a>Pelo Facebook
+										<a href="https://www.facebook.com/Showroomcasas/">Pelo Facebook
 											<img style="position: relative; left: 6px;" class="icons"
 												src="imagens/icons/facebookicon.png" alt="foto do icone facebook">
 										</a>
@@ -299,11 +306,17 @@
 		<img onclick="getValues('whatsapp');" class="footericons"
 			style="position: relative; left: 6px; cursor: pointer;" src="imagens/icons/whatsapp.png"
 			alt="foto do icone whatsapp">
-		<img onclick="getValues('instagram')" class="footericons" style="position: relative; left: 6px; cursor: pointer;"
-			src="imagens/icons/instagramicon.png" alt="foto do icone instagram">
+		<img onclick="getValues('instagram')" class="footericons"
+			style="position: relative; left: 6px; cursor: pointer;" src="imagens/icons/instagramicon.png"
+			alt="foto do icone instagram">
 
 		<div id="tag" class="tagContent contentofthetag">
-			<img id="tag2" class="tagContent contentofthetag" src="imagens/icons/instagramTag.jpg" alt="tag do instagram">
+
+			<img id="tag2" class="tagContent contentofthetag" src="imagens/icons/instagramTag.jpg"
+				alt="tag do instagram">
+			<div id="sair" class="w3-card w3-right">
+				<p>SAIR</p>
+			</div>
 		</div>
 
 		<p>&copy 2019 por showroomcasas. Developed by Willian Lemann <a

@@ -72,22 +72,38 @@ function getValues(id) {
             break;
 
         case 'whatsapp':
-            open('https://api.whatsapp.com/send?phone=5551993562223');
+            const space = '%20';
+            const message = 'Olá,' + space + 'preciso de uma informação!';
+            open('https://api.whatsapp.com/send?phone=5551993562223&text='+message);
+            break;
+
+        case 'telefone':
+            open('tel: 5133195251');
             break;
 
         case 'instagram':
-           let contentClass = document.getElementById('tag');
-         contentClass.style.display = "block";
-         let contentClass2 = document.getElementById('tag2');
-         contentClass2.style.display = "block";
-         document.body.style.backgroundColor = 'gray'
+
+            let contentClass = document.getElementById('tag');
+            contentClass.style.display = "block";
+            let contentClass2 = document.getElementById('tag2');
+            contentClass2.style.display = "block";
+            document.body.style.backgroundColor = 'gray'
             break;
     }
 
+    //
+    let sair = document.getElementById('sair');
+    let tag = document.getElementById('tag');
+    sair.addEventListener('click', function () {
+        tag.style.display = 'none';
+        document.body.style.backgroundColor = '';
+    })
 
 
 
 }
+
+
 
 
 const valueScreen = document.body.offsetWidth;
