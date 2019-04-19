@@ -3,14 +3,14 @@
 //Map Api
 function inicializar() {
 
-    var coordenadas = { lat: -29.993487, lng: -51.071185 };
-
-    var mapa = new google.maps.Map(document.getElementById('mapa'), {
+    let coordenadas = { lat: -30.096687, lng: -51.125867 };
+    
+    let mapa = new google.maps.Map(document.getElementById('mapa'), {
         zoom: 15,
         center: coordenadas
     });
 
-    var marker = new google.maps.Marker({
+    let marker = new google.maps.Marker({
         position: coordenadas,
         map: mapa,
         title: 'ShowRoomCasas'

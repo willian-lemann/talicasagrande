@@ -51,9 +51,9 @@
 		<div class="w3-top smalldropdown">
 			<div class="w3-wide w3-white w3-card ">
 				<a onclick="getValues('home');" class="w3-button"><b>ShowRoom</b> Casas</a>
-				<div class="menuicon">
+				<div class="menuicon ">
 					<img class="w3-right" style="position: relative; top:-35px;" src="imagens/icons/menu-button.png"
-						alt="">
+						alt="icone de um menu sanduíche">
 				</div>
 				<div class="smalldropdown-content">
 
@@ -246,12 +246,12 @@
 			<h4><b>ShowRoom</b> Casas</h4>
 			<p>Casas em madeira e alvenaria</p>
 			<p><i style="cursor: pointer;" onclick="getValues('mapa')"
-					class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Porto Alegre, RS</p>
+					class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>Porto Alegre, RS</p>
 			<p><i onclick="getValues('telefone')" style="cursor: pointer;"
 					class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"><a href="tel: 5133195251"></a></i>51 3319-5251
 			</p>
-			<p><i style="cursor: pointer;" class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email:
-				showroomcasas@hotmail.com</p>
+			<p><i style="cursor: pointer;"
+					class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i>showroomcasas@hotmail.com</p>
 
 		</div>
 
@@ -324,16 +324,17 @@
 			</div>
 		</div>
 
-		<p>&copy 2019 por showroomcasas. Developed by Willian Lemann <img id="devlinkedin" style="cursor: pointer;;height: 16px; width: 16px;" src="imagens/icons/linkedin.png" alt="icone do linkedin do desenvolvedor do site"> <a
-				href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
-				class="w3-hover-text-green"></a></p>
-				<script>
-					//ao clicar no icone do linkedin do desenvolvedor
-					const devlinkedin = document.getElementById('devlinkedin');
-					devlinkedin.addEventListener('click', ()=>{
-						open('https://www.linkedin.com/in/willian-lemann-51a157161/');
-					})
-				</script>
+		<p>&copy 2019 por showroomcasas. Developed by Willian Lemann <img id="devlinkedin"
+				style="cursor: pointer;;height: 16px; width: 16px;" src="imagens/icons/linkedin.png"
+				alt="icone do linkedin do desenvolvedor do site"> <a href="https://www.w3schools.com/w3css/default.asp"
+				title="W3.CSS" target="_blank" class="w3-hover-text-green"></a></p>
+		<script>
+			//ao clicar no icone do linkedin do desenvolvedor
+			const devlinkedin = document.getElementById('devlinkedin');
+			devlinkedin.addEventListener('click', () => {
+				open('https://www.linkedin.com/in/willian-lemann-51a157161/');
+			})
+		</script>
 	</footer>
 
 </body>

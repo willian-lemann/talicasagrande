@@ -45,7 +45,7 @@
     z-index: -1;
     cursor: pointer;
     text-decoration: none;
-    opacity: 0.9;
+    opacity: 0.8;
     outline: 0;
     display: none;
     border-bottom-left-radius: 10px;
@@ -80,6 +80,9 @@ a {
     text-decoration: none;
 }
 
+
+
+/* For mobile screens */
 .smalldropdown-content {
     background-color: white;
     position: absolute;
