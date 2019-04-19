@@ -73,7 +73,7 @@ function getValues(id) {
 
         case 'whatsapp':
             const space = '%20';
-            const message = 'Olá,' + space + 'preciso de uma informação!';
+            const message = 'Olá,' + space + 'preciso'++'de'+space+'uma'+space+'informação!';
             open('https://api.whatsapp.com/send?phone=5551993562223&text='+message);
             break;
 
