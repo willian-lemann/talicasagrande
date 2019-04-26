@@ -3,12 +3,7 @@
     font-family: 'Work Sans', sans-serif;
 }
 
-.copyrights{
-    position: absolute;
-    top:180px;
-    left: 500px;
-    z-index: 1;
-}
+ 
 
 #mapa {
     height: 600px;
