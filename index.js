@@ -125,6 +125,7 @@ if (valueScreen < 1200) {
         bigscreen.style.display = 'none'; //makes the display disappear
     })
 }
+ 
 
 
 

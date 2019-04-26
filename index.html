@@ -144,6 +144,7 @@
 				<div class="w3-display-container">
 					<div class="w3-display-topleft w3-black w3-padding">Summer House</div>
 					<img src="/imagens/fotos/foto7.jpg" height="200px" alt="House" style="width:100%">
+					<span class="copyrights">&copyshowroomcasas</span>
 				</div>
 			</div>
 			<div class="w3-col l3 m6 w3-margin-bottom">
@@ -259,15 +260,17 @@
 		<div class="w3-container w3-padding-32" id="contato">
 			<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Mande seu projeto</h3>
 			<p>Vamos falar sobre o próximo projeto que você quer realizar.</p>
-			<form action="/action_page.php" target="_blank">
-				<input class="w3-input w3-border" type="text" placeholder="Nome" required name="Name">
-				<input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
-				<input class="w3-input w3-section w3-border" type="text" placeholder="Titulo" required name="Subject">
+			<form action="https://formspree.io/willianleman@hotmail.com" method="POST">
+				<input class="w3-input w3-border" type="text" placeholder="Nome" required name="name">
+				<input class="w3-input w3-section w3-border" type="email" placeholder="Email" required name="e-mail">
+				<input class="w3-input w3-section w3-border" type="text" placeholder="Titulo" required name="subject">
 				<input class="w3-input w3-section w3-border" type="text" placeholder="Descrição" required
 					name="Comment">
+
 				<button style="border-radius: 10px;" class="w3-button w3-black w3-section" type="submit">
 					<i class="fa fa-paper-plane"></i> Enviar projeto
 				</button>
+
 				<label class="w3-card w3-button" style="border-radius: 10px;" for='file'>Anexar arquivo</label>
 				<input id="file" type="file" name="file">
 				<style>
