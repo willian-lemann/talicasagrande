@@ -1,5 +1,3 @@
-
-
 //Map Api
 function inicializar() {
 
