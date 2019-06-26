@@ -2,7 +2,7 @@
 function inicializar() {
 
     let coordenadas = { lat: -30.096687, lng: -51.125867 };
-    
+
     let mapa = new google.maps.Map(document.getElementById('mapa'), {
         zoom: 15,
         center: coordenadas
@@ -14,7 +14,6 @@ function inicializar() {
         title: 'ShowRoomCasas'
     });
 }
-
 
 function getValues(id) {
     let value = document.getElementById(id);
@@ -96,7 +95,6 @@ function getValues(id) {
             break;
     }
 
-    //
     const screen = document.body.offsetWidth;
     if (screen > 1200) {
         let sair = document.getElementById('sair');
@@ -110,9 +108,6 @@ function getValues(id) {
 
 }
 
-
-
-
 const valueScreen = document.body.offsetWidth;
 if (valueScreen < 1200) {
     window.addEventListener('load', () => {
@@ -123,7 +118,22 @@ if (valueScreen < 1200) {
         bigscreen.style.display = 'none'; //makes the display disappear
     })
 }
- 
+
+//tratamento do arquivo
+function ValidaArquivo() {
+    const ext = ['.gif', '.jpg', '.jpeg', '.doc', '.htm', '.pdf', '.ppt', '.pps', '.txt', '.xls', '.zip','.json'];
+    setInterval(() => {
+        let file = document.getElementById('file');
+        let fileStatus = document.getElementById('fileStatus');
+        fileStatus.innerText = file.value;
+    }, 100);
+
+
+}
+
+
+
+
 
 
 

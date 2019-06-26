@@ -175,3 +175,8 @@ a {
     cursor: pointer;
     z-index: -1;
 }
+
+#inputs:hover{
+    cursor: pointer;
+    border-color: #70a1ff;
+}
