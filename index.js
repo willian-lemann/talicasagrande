@@ -120,16 +120,25 @@ if (valueScreen < 1200) {
 }
 
 //tratamento do arquivo
-function ValidaArquivo() {
-    const ext = ['.gif', '.jpg', '.jpeg', '.doc', '.htm', '.pdf', '.ppt', '.pps', '.txt', '.xls', '.zip','.json'];
+function MostraArquivo() {
+
     setInterval(() => {
         let file = document.getElementById('file');
         let fileStatus = document.getElementById('fileStatus');
         fileStatus.innerText = file.value;
     }, 100);
-
-
 }
+
+// function ValidaArquivo() {
+//     const ext = ['.gif', '.jpg', '.jpeg', '.doc', '.htm', '.pdf', '.ppt', '.pps', '.txt', '.xls', '.zip', '.json'];
+//     let fileStatus = document.getElementById('fileStatus');
+
+//     fileStatus.value != '' ? 
+// }
+
+
+
+
 
 
 

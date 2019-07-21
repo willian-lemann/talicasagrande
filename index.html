@@ -269,21 +269,23 @@
 			<p>Vamos falar sobre o próximo projeto que você quer realizar.</p>
 			<form action="https://showroomcasas-api.herokuapp.com/send" method="POST">
 				<input id="inputs" class="w3-input w3-border" type="text" placeholder="Nome" required name="name">
-				<input id="inputs" class="w3-input w3-section w3-border" type="email" placeholder="Email" required name="email"> 
-				<input id="inputs" style="height: 60px;" class="w3-input w3-section w3-border" type="text" placeholder="Descrição" required
-					name="comment">
+				<input id="inputs" class="w3-input w3-section w3-border" type="email" placeholder="Email" required
+					name="email">
+				<input id="inputs" style="height: 60px;" class="w3-input w3-section w3-border" type="text"
+					placeholder="Descrição" required name="comment">
 
 				<button style="border-radius: 10px;" class="w3-button w3-black w3-section" type="submit">
 					<i class="fa fa-paper-plane"></i> Enviar projeto
 				</button>
 
-				<label id="archive" onclick="ValidaArquivo();" class="w3-card w3-button" style="border-radius: 10px;" for='file'>Anexar arquivo</label>
+				<label id="archive" onclick="MostraArquivo();" class="w3-card w3-button" style="border-radius: 10px;"
+					for='file'>Anexar arquivo</label>
 				<input id="file" type="file" name="file"> <span id="fileStatus"></span>
 				<style>
 					input[type='file'] {
 						display: none;
 
-					} 
+					}
 				</style>
 
 			</form>
