@@ -121,16 +121,32 @@ if (valueScreen < 1200) {
 
 //tratamento do arquivo
 function ValidaArquivo() {
-    const ext = ['.gif', '.jpg', '.jpeg', '.doc', '.htm', '.pdf', '.ppt', '.pps', '.txt', '.xls', '.zip','.json'];
+    const ext = ['.gif', '.jpg', '.jpeg', '.doc', '.htm', '.pdf', '.ppt', '.pps', '.txt', '.xls', '.zip', '.json'];
     setInterval(() => {
         let file = document.getElementById('file');
         let fileStatus = document.getElementById('fileStatus');
         fileStatus.innerText = file.value;
     }, 100);
-
-
 }
 
+
+
+
+let element = (nome, valor) => {
+    return `<ul>
+            <li>Casa: ${nome}</li>
+            <li>Valor: ${valor}</li>
+            </ul>`
+};
+
+let houseOver = (id) => {
+    let houseinfo = document.getElementById(id);
+    houseinfo.innerHTML = element('Madeira', 39000);
+}
+
+let houseLeave = (id) => {
+    document.getElementById(id).innerHTML = '<i class="material-icons">add</i>';
+}
 
 
 
