@@ -1,45 +1,349 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>ShowRoomCasas</title>
-</head>
-<style>
-    @import url('https://fonts.googleapis.com/css?family=Work+Sans');
-
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Work Sans';
-    }
-
-    .app {
-        height: 100vh;
-        width: 100%;
-        background: black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .warning {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-</style>
+<html>
+<title>JL Casas</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="index.css">
 
 <body>
-    <div class="app">
-        <div class="warning">
-            <h2 style="color: white;">Novidades em breve...</h2>
-        </div>
-    </div>
+
+	<!-- Navbar (sit on top) -->
+	<div class="w3-top" id="bigscreen">
+		<div class="w3-bar w3-white w3-wide w3-card">
+			<a onclick="getValues('home');" class="w3-bar-item w3-button  "><b>JL</b> Casas</a>
+			<a onclick="getValues('projetos');" class="w3-bar-item w3-button ">Projetos</a>
+			<a onclick="getValues('sobre');" class="w3-bar-item w3-button  ">Sobre nós</a>
+			<a onclick="getValues('contato');" class="w3-bar-item w3-button  ">Contato</a>
+			<div class="w3-bar-item w3-button dropdown">
+				<a>Faça seu orçamento</a>
+				<div class="dropContent">
+					<ul>
+						<li>
+							<a
+								href="https://api.whatsapp.com/send?phone=5551993562223&text=Olá,%20Preciso%20de%20uma%20informação!">Pelo
+								WhatsApp</a>
+							<img class="icons iconsBigscreen" src="imagens/icons/whatsapp-logo.png"
+								alt="icone do whatsapp">
+						</li>
+						<li>
+							<a href="https://www.facebook.com/Showroomcasas/">Pelo Facebook </a>
+							<img style="position: relative; left:12px;" class="icons iconsBigscreen"
+								src="imagens/icons/facebookicon.png" alt="icone do facebook">
+						</li>
+						<li>
+							<a href="https://www.instagram.com/showroomdecasas?r=nametag">Pelo Instagram</a>
+							<img class="icons iconsBigscreen" src="imagens/icons/instagram.png" alt="icone do facebook">
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- For small screens -->
+
+	<div class="keyclass">
+		<div class="w3-top smalldropdown">
+			<div class="w3-wide w3-white w3-card ">
+				<a onclick="getValues('home');" class="w3-button"><b>ShowRoom</b> Casas</a>
+				<div class="menuicon ">
+					<img class="w3-right" style="position: relative; top:-35px;" src="imagens/icons/menu-button.png"
+						alt="icone de um menu sanduíche">
+				</div>
+				<div class="smalldropdown-content">
+
+					<ul>
+						<li>
+							<a onclick="getValues('projetos');">Projetos</a>
+						</li>
+						<li>
+							<a onclick="getValues('sobre');">Sobre nós</a>
+						</li>
+						<li>
+							<a onclick="getValues('contato');">Contato</a>
+						</li>
+
+						<div class="subdropdown">
+
+							<li>
+								<a>Faça seu orçamento</a>
+							</li>
+							<div class="subcontent">
+								<ul>
+									<li>
+										<a
+											href="https://api.whatsapp.com/send?phone=5551993562223&text=Olá,%20Preciso%20de%20uma%20informação!">Pelo
+											WhatsApp
+											<img style="position: relative; left: 2px;" class="icons"
+												src="imagens/icons/whatsapp-logo.png" alt="foto do icone whatsapp">
+										</a>
+									</li>
+									<li>
+										<a href="https://www.facebook.com/Showroomcasas/">Pelo Facebook
+											<img style="position: relative; left: 6px;" class="icons"
+												src="imagens/icons/facebookicon.png" alt="foto do icone facebook">
+										</a>
+									</li>
+									<li>
+										<a href="https://www.instagram.com/showroomdecasas?r=nametag">Pelo Instagram
+											<img class="icons" src="imagens/icons/instagram.png"
+												alt="foto do icone instagram">
+										</a>
+									</li>
+									<ul>
+							</div>
+						</div>
+					</ul>
+
+				</div>
+
+			</div>
+
+
+
+
+		</div>
+	</div>
+
+ 
+	<!-- Header -->
+	<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+		<img class="w3-image" src="/imagens/fotos/fundoheader.jpg" alt="Architecture" width="1500" height="800">
+		<div class="w3-display-middle w3-margin-top w3-center">
+			<h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>ShowRoom</b></span>
+				<span class="w3-hide-small w3-text-light-grey; w3-opacity-min"
+					style="color: black; font-weight: bold">Casas</span></h1>
+		</div>
+
+
+
+
+	</header>
+
+	<!-- Page content -->
+	<div class="w3-content w3-padding" style="max-width:1564px">
+
+		<!-- Project Section -->
+		<div class="w3-container w3-padding-32" id="projetos">
+			<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projetos</h3>
+		</div>
+
+		<div class="w3-row-padding">
+			<div class="w3-col l3 m6 w3-margin-bottom">
+				<div class="w3-display-container">
+
+					<div id="1" onmouseover="houseOver('1');" onmouseout="houseLeave('1');" class="w3-display-topleft w3-black w3-padding add-icons"><i
+							  class="material-icons">add</i></div>
+					<img src="/imagens/fotos/foto7.jpg" height="200px" alt="House" style="width:100%">
+					<span class="w3-display-middle w3-padding">&copyshowroomcasas</span>
+				</div>
+			</div>
+			<div class="w3-col l3 m6 w3-margin-bottom">
+				<div class="w3-display-container">
+					<div id="2" onmouseover="houseOver('2');" onmouseout="houseLeave('2');" class="w3-display-topleft w3-black w3-padding add-icons"><i
+							 class="material-icons">add</i></div>
+					<img src="/imagens/fotos/foto6.jpg" height="200px" alt="House" style="width:100%">
+					<span class="w3-display-middle w3-padding">&copyshowroomcasas</span>
+				</div>
+			</div>
+			<div class="w3-col l3 m6 w3-margin-bottom">
+				<div class="w3-display-container">
+					<div id="3" onmouseover="houseOver('3');" onmouseout="houseLeave('3');" class="w3-display-topleft w3-black w3-padding add-icons"><i
+							class="material-icons">add</i></div>
+					<img src="/imagens/fotos/foto2.jpg" height="200px" alt="House" style="width:100%">
+					<span class="w3-display-middle w3-padding">&copyshowroomcasas</span>
+				</div>
+			</div>
+			<div class="w3-col l3 m6 w3-margin-bottom">
+				<div class="w3-display-container">
+					<div id="4" onmouseover="houseOver('4');" onmouseout="houseLeave('4');" class="w3-display-topleft w3-black w3-padding add-icons"><i
+							class="material-icons">add</i></div>
+					<img src="/imagens/fotos/foto9.jpg" height="200px" alt="House" style="width:100%">
+					<span class="w3-display-middle w3-padding">&copyshowroomcasas</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="w3-row-padding">
+			<div class="w3-col l3 m6 w3-margin-bottom">
+				<div class="w3-display-container">
+					<div id="5" onmouseover="houseOver('5');" onmouseout="houseLeave('5');" class="w3-display-topleft w3-black w3-padding add-icons"><i
+							class="material-icons">add</i></div>
+					<img src="/imagens/fotos/foto10.jpg" height="200px" alt="House" style="width:99%">
+					<span class="w3-display-middle w3-padding">&copyshowroomcasas</span>
+				</div>
+			</div>
+			<div class="w3-col l3 m6 w3-margin-bottom">
+				<div class="w3-display-container">
+					<div id="6" onmouseover="houseOver('6');" onmouseout="houseLeave('6');" class="w3-display-topleft w3-black w3-padding add-icons"><i
+							class="material-icons">add</i></div>
+					<img src="/imagens/fotos/foto16.jpg" height="200px" height="" alt="House" style="width:99%">
+					<span class="w3-display-middle w3-padding">&copyshowroomcasas</span>
+				</div>
+			</div>
+			<div class="w3-col l3 m6 w3-margin-bottom">
+				<div class="w3-display-container">
+					<div id="7" onmouseover="houseOver('7');" onmouseout="houseLeave('7');" class="w3-display-topleft w3-black w3-padding add-icons"><i
+							class="material-icons">add</i></div>
+					<img src="/imagens/fotos/foto22.jpg" height="200px" alt="House" style="width:99%">
+					<span class="w3-display-middle w3-padding">&copyshowroomcasas</span>
+				</div>
+			</div>
+			<div class="w3-col l3 m6 w3-margin-bottom">
+				<div class="w3-display-container">
+					<div id="8" onmouseover="houseOver('8');" onmouseout="houseLeave('8');" class="w3-display-topleft w3-black w3-padding add-icons"><i
+							class="material-icons">add</i></div>
+					<img src="/imagens/fotos/foto21.jpg" height="200px" alt="House" style="width:99%">
+					<span class="w3-display-middle w3-padding">&copyshowroomcasas</span>
+				</div>
+			</div>
+		</div>
+
+		<!-- About Section -->
+		<div class="w3-container w3-padding-32" id="sobre">
+			<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Empresa</h3>
+			<p style="text-align: justify">Há 25 anos no ramo, construindo sonhos, a ShowRoom casas nasceu da parceria
+				de dois escritórios
+				comerciais especializados em vendas de casas pré-fabricadas. Hoje a ShowRoom trabalha com casas de
+				Madeira e Alverania. Nós não apenas construimos casas, mas gostamos de enfatizar que projetamos idieas,
+				construimos sonhos e realizamos os planos de muitas famílias.
+			</p>
+		</div>
+		<!-- more about the company -->
+		<div class="w3-container" style="padding:128px 16px" id="about">
+			<h3 class="w3-center">Nosso propósito</h3>
+			<p class="w3-center w3-large">Características que mostram quem somos</p>
+			<div class="w3-row-padding w3-center" style="margin-top:64px">
+				<div class="w3-quarter">
+					<i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+					<p class="w3-large">Resiliência</p>
+					<p>Não nos conformamos com o pouco, queremos satisfazer muito nosso cliente e sabemos que devemos
+						nos adaptar a cada situação, evoluindo em todos os aspectos, na ideia, na construção do sonho e
+						na entrega dos planos realizados.</p>
+				</div>
+				<div class="w3-quarter">
+					<i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+					<p class="w3-large">Paixão</p>
+					<p>Encaramos cada projeto como se fosse o primeiro de nossa historia, isso nos torna únicos. Temos
+						paião naquilo que fazemos.</p>
+				</div>
+				<div class="w3-quarter">
+					<i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+					<p class="w3-large">Qualidade</p>
+					<p>Nos preocupamos com a entrega, nos empenhamos em sempre priorizar o tempo com que as etapas são
+						realizadas sempre se preocupando prestar um serviço exemplar, acreditamos que o otimo é inimigo
+						do bom e que cada etapa deve ser respeitada para que o todo seja entregue de forma eficaz.</p>
+				</div>
+				<div class="w3-quarter">
+					<i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+					<p class="w3-large">Integridade</p>
+					<p>A ShowRoom não trabalha de forma injusta, sabemos que estamos trabalhando com os planos e sonhos
+						de famílias, por isso não pode faltar a nossa integridade com o serviço prestado, do inicio ao
+						fim.</p>
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- Contact Section -->
+		<div class="w3-container w3-padding-32" id="contato">
+			<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contato</h3>
+			<h4><b>ShowRoom</b> Casas</h4>
+			<p>Casas em madeira e alvenaria</p>
+			<p><i style="cursor: pointer;" onclick="getValues('mapa')"
+					class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>Porto Alegre, RS</p>
+			<p><i onclick="getValues('telefone')" style="cursor: pointer;"
+					class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"><a href="tel: 5133195251"></a></i>51 3319-5251
+			</p>
+			<p><i style="cursor: pointer;"
+					class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i>showroomcasas@hotmail.com</p>
+
+		</div>
+
+
+		<div class="w3-container w3-padding-32" id="contato">
+			<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Mande seu projeto</h3>
+			<p>Vamos falar sobre o próximo projeto que você quer realizar.</p>
+			<form action="https://showroomcasas-api.herokuapp.com/send" method="POST">
+				<input id="inputs" class="w3-input  w3-border" type="text" style="width:600px" placeholder="Nome" required name="name">
+				<input id="inputs" class="w3-input w3-section w3-border" style="width:600px" type="email" placeholder="Email" required name="email">
+				<input id="inputs" style="height: 60px; width:600px;" class="w3-input w3-section w3-border" type="text" placeholder="Descrição" required name="comment">
+
+				<button style="border-radius: 10px;" class="w3-button w3-black w3-section" type="submit">
+					<i class="fa fa-paper-plane"></i> Enviar projeto
+				</button>
+
+				<label id="archive" onclick="ValidaArquivo();" class="w3-card w3-button" style="border-radius: 10px;"
+					for='file'>Anexar arquivo</label>
+				<input id="file" type="file" name="file"> <span id="fileStatus"></span>
+				<style>
+					input[type='file'] {
+						display: none;
+
+					}
+				</style>
+
+			</form>
+		</div>
+
+		<!-- Image of location/map -->
+		<div class="w3-right">
+			<p>Chegue mais rápido até nós usando<b> Waze</b> <img onclick="getValues('waze')" style="cursor: pointer;"
+					src="imagens/icons/waze.png" alt="icone do waze"></p>
+		</div>
+		<div id="mapa" class="w3-container">
+
+			<script async defer
+				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxM7XOgnus2OWPAGnT0rdxyDzNwEjIgTM&callback=inicializar">
+				</script>
+		</div>
+
+		<!-- End page content -->
+	</div>
+
+
+	<!-- Footer -->
+	<footer class="w3-center w3-black w3-padding-16">
+
+		<img onclick="getValues('facebook');" class="footericons"
+			style="position: relative; left: 6px; cursor: pointer;" src="imagens/icons/facebook-logo.png"
+			alt="foto icone facebook">
+		<img class="footericons" style="position: relative; left: 6px; cursor: pointer;"
+			src="imagens/icons/linkedin.png" alt="foto do icone linkedin">
+		<img onclick="getValues('whatsapp');" class="footericons"
+			style="position: relative; left: 6px; cursor: pointer;" src="imagens/icons/whatsapp.png"
+			alt="foto do icone whatsapp">
+		<img onclick="getValues('instagram')" class="footericons"
+			style="position: relative; left: 6px; cursor: pointer;" src="imagens/icons/instagramicon.png"
+			alt="foto do icone instagram">
+
+		<div id="tag" class="tagContent contentofthetag">
+			<img id="tag2" class="tagContent contentofthetag" src="imagens/icons/instagramTag.jpg"
+				alt="tag do instagram">
+			<div id="sair" class="w3-card w3-right">
+				<p>SAIR</p>
+			</div>
+		</div>
+
+		<p>&copy 2019 por showroomcasas. Developed by Willian Lemann <img id="devlinkedin"
+				style="cursor: pointer;;height: 16px; width: 16px;" src="imagens/icons/linkedin.png"
+				alt="icone do linkedin do desenvolvedor do site"> <a href="https://www.w3schools.com/w3css/default.asp"
+				title="W3.CSS" target="_blank" class="w3-hover-text-green"></a></p>
+		<script>
+			//ao clicar no icone do linkedin do desenvolvedor
+			const devlinkedin = document.getElementById('devlinkedin');
+			devlinkedin.addEventListener('click', () => {
+				open('https://www.linkedin.com/in/willian-lemann-51a157161/');
+			})
+		</script>
+	</footer>
+	<script src="index.js"></script>
 </body>
 
 </html>
