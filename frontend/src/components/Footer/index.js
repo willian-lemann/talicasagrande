@@ -27,7 +27,7 @@ const Footer = () => {
                                 <li> <FiInstagram onClick={() => window.open('https://instagram.com/tali.casa')} size={50} color='#7159c1' /></li>
                                 <li> <FiFacebook onClick={() => window.open('https://www.facebook.com/tali.casa')} size={50} color='#7159c1' /></li>
                             </ul>
-                        </div>
+                        </div> 
                     </section>
                 </section>
 
