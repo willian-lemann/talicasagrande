@@ -15,6 +15,7 @@ function Routes() {
                 <Route path="/products" component={Products} />
             </Switch>
         </BrowserRouter>
+        
     );
 }
 
