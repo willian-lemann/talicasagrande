@@ -1,0 +1,16 @@
+import React from 'react';
+
+import '../src/global.css';
+
+import Routes from '../src/routes';
+
+
+function App() {
+  return (
+    <>
+      <Routes />
+    </>
+  );
+}
+
+export default App;

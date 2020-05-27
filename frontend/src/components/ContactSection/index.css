@@ -1,0 +1,60 @@
+.contact-container {
+    margin: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container .title-content strong {
+    font-size: 28px;
+}
+
+.contact-container .title-content .divisorContactSection {
+    margin-top: 15px;
+    border-bottom: 1px;
+    margin-bottom: 15px;
+    opacity: 0.4;
+}
+
+.contact-container .contact-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 200px;
+}
+
+.contact-container .contact-content strong {
+    font-size: 18px;
+}
+
+.contact-container .contact-content p {
+    margin-top: 20px;
+}
+
+.contact-container .contact-content .icons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+
+.contact-container .contact-content .icons-container .icons-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container .contact-content .icons-container .icon-whatsapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container .contact-content .icons-container .icon-whatsapp img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.contact-container .contact-content .icons-container p {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}

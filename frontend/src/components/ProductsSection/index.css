@@ -1,0 +1,50 @@
+.products-container {
+    margin: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.products-container strong {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.divisorProductsSection {
+    margin-top: 15px;
+    border-bottom: 1px;
+    margin-bottom: 15px;
+    opacity: 0.4;
+}
+
+.products-container .products-grid {
+    align-self: center;
+}
+
+.products-container .products-grid ul {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 24px;
+}
+
+.products-container .products-grid ul li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 200px;
+    max-width: 300px;
+    max-height: 200px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+
+.products-container .products-grid ul li:hover {
+    transform: scale(1.1);
+}
+
+.products-container .products-grid ul li img {
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+}
