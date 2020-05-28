@@ -6,13 +6,14 @@
 
 .products-container strong {
     font-size: 28px;
+    margin: 0 auto;
     margin-bottom: 10px;
 }
 
 .divisorProductsSection {
     margin-top: 15px;
     border-bottom: 1px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     opacity: 0.4;
 }
 
@@ -40,7 +41,7 @@
 }
 
 .products-container .products-grid ul li:hover {
-    transform: scale(1.1);
+    transform: scale(1.0);
 }
 
 .products-container .products-grid ul li img {

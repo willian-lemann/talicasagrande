@@ -23,14 +23,16 @@ const Header = () => {
                         isOpen={isClicked}
                         menuClicked={() => handleMenuClick()}
                         rotate={0}
-                        animationDuration={0.4} />
+                        animationDuration={0.4}
+                    />
+
                     <img src={Logo} alt="Logotype" />
                 </div>
                 <ul className={isClicked && 'hideMenu'}>
-                    <Link to="about-container" smooth={true} className="navlist"> Empresa</Link>
-                    <Link className="navlist"> Projetos</Link>
-                    <Link to="products-container" smooth={true} className="navlist"> Modelos de Casas</Link>
-                    <Link to="contact-container" smooth={true} className="navlist"> Contato</Link>
+                    <Link onClick={() => setIsClicked(!isClicked)} to="about-container" smooth={true} className="navlist"> Empresa</Link>
+                    <Link onClick={() => setIsClicked(!isClicked)} className="navlist"> Projetos</Link>
+                    <Link onClick={() => setIsClicked(!isClicked)} to="products-container" smooth={true} className="navlist"> Modelos de Casas</Link>
+                    <Link onClick={() => setIsClicked(!isClicked)} to="contact-container" smooth={true} className="navlist"> Contato</Link>
                 </ul>
             </nav>
         </header>
