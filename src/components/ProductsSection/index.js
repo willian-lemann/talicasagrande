@@ -19,6 +19,8 @@ const ProductsSection = () => {
                     <li><img src={foto1} alt="" /> </li>
                     <li><img src={foto1} alt="" /> </li>
                     <li><img src={foto1} alt="" /> </li>
+                    <li><img src={foto1} alt="" /> </li>
+                    <li><img src={foto1} alt="" /> </li>
                 </ul>
             </div>
         </section>
