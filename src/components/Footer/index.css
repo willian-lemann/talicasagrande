@@ -1,3 +1,94 @@
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 700px;
+    width: 100%;
+}
+
+.footer-container .top-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container .top-container .social-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.footer-container .top-container .social-container span {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-container .top-container .social-container ul {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 200px;
+}
+
+.footer-container .top-container .social-container ul li {
+    list-style: none;
+}
+
+.footer-container .top-container .partners-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-container .top-container .partners-container ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-container .top-container .partners-container ul li {
+    list-style: none;
+}
+
+.footer-container .top-container .partners-container span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-container .madeBy-container {
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container .madeBy-container span {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
 @media (max-width: 600px) {
     .footer-container {
         display: flex;
