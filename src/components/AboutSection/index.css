@@ -62,3 +62,21 @@
 .about-container .purpose-container .purpose-content .cards .icons {
     align-self: center;
 }
+
+@media (max-width:600px) {
+    .about-container .title-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+    }
+    .about-container .title-content strong {
+        font-size: 28px;
+    }
+    .about-container .purpose-container .purpose-content {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+}

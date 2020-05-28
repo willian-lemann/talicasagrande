@@ -24,7 +24,7 @@
     display: grid;
     gap: 40px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 24px;
+    margin: 24px; 
 }
 
 .products-container .products-grid ul li {
@@ -47,4 +47,14 @@
     width: 300px;
     height: 200px;
     border-radius: 5px;
+}
+
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .products-container .products-grid ul{
+        display: flex;
+        flex-direction: column;
+    }
 }

@@ -17,7 +17,7 @@
      position: absolute;
      border-radius: 50%;
      left: 50%;
-     top: 75vh;
+     top: 55vh;
      transform: translate(-50%, -50%)
  }
 
@@ -27,3 +27,15 @@
      border-radius: 10px;
      background-color: white;
  }
+
+
+ @media only screen 
+ and (min-device-width: 320px) 
+ and (max-device-width: 568px)
+ and (-webkit-min-device-pixel-ratio: 2) {
+    .background-container .backgroundWaterMark{
+        width: 150px;
+        height: 150px;
+        top: 30vh;
+    }
+}

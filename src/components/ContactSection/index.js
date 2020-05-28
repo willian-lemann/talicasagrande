@@ -19,30 +19,36 @@ function ContactSection() {
             <section className="contact-content">
 
                 <div className="icons-container">
-                    <FiMapPin size={70} />
-                    <div className="icons-content">
+                    <section className="contact-icons">
+                        <FiMapPin size={50} />
+                    </section>
+                    <section className="icons-content">
                         <p>Rua Martinho Lutero, 1390, Formoza - Alvorada RS</p>
                         <p>Av. Delmar Rocha Barbosa, 261, Parque Santa Fé - Porto Alegre RS</p>
-                    </div>
+                    </section>
                 </div>
 
                 <div className="icons-container">
-                    <FiPhone size={40} />
-                    <div className="icons-content">
+                    <section className="contact-icons">
+                        <FiPhone size={40} />
+                    </section>
+                    <section className="icons-content">
                         <p>51 3447-6222</p>
                         <div className="icon-whatsapp">
                             <p>51 99690-8855</p> <img src={whatsappLogo} />
                         </div>
                         <p>51 99723-0445</p>
-                    </div>
+                    </section>
                 </div>
 
                 <div className="icons-container">
-                    <FiMail size={40} />
-                    <div className="icons-content">
+                    <section className="contact-icons">
+                        <FiMail size={40} />
+                    </section>
+                    <section className="icons-content">
                         <p>jucicasaspre@hotmail.com</p>
                         <p>jlcorretora@hotmail.com</p>
-                    </div>
+                    </section>
                 </div>
             </section>
         </section>

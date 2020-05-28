@@ -2,7 +2,7 @@ import React from 'react';
 
 import './index.css';
 
-import backgroundImage from '../../assets/fundoheader-min.jpg'
+import foto1 from '../../assets/foto1.jpeg';
 
 const ProductsSection = () => {
     return (
@@ -11,14 +11,14 @@ const ProductsSection = () => {
             <hr className="divisorProductsSection"/>
             <div className="products-grid">
                 <ul>
-                    <li><img src={backgroundImage} alt="" /> </li>
-                    <li><img src={backgroundImage} alt="" /> </li>
-                    <li><img src={backgroundImage} alt="" /> </li>
-                    <li><img src={backgroundImage} alt="" /> </li>
-                    <li><img src={backgroundImage} alt="" /> </li>
-                    <li><img src={backgroundImage} alt="" /> </li>
-                    <li><img src={backgroundImage} alt="" /> </li>
-                    <li><img src={backgroundImage} alt="" /> </li>
+                    <li><img src={foto1} alt="" /> </li>
+                    <li><img src={foto1} alt="" /> </li>
+                    <li><img src={foto1} alt="" /> </li>
+                    <li><img src={foto1} alt="" /> </li>
+                    <li><img src={foto1} alt="" /> </li>
+                    <li><img src={foto1} alt="" /> </li>
+                    <li><img src={foto1} alt="" /> </li>
+                    <li><img src={foto1} alt="" /> </li>
                 </ul>
             </div>
         </section>

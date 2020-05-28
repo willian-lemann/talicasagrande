@@ -1,106 +1,76 @@
-.footer-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
-    width: 100%;
-}
-
-.footer-container .top-footer-container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-}
-
-.footer-container .bottom-footer-container {
-    height: 90px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #7159c1;
-}
-
-.footer-container .bottom-footer-container span {
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 350px;
-}
-
-.footer-container .madeBy-container span {
-    font-size: 18px;
-    font-weight: bold;
-    color: #7159c1;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 350px;
-}
-
-.footer-container .madeBy-container {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.footer-container .madeBy-container .social-container {
-    display: flex;
-    flex-direction: column;
-    width: 700px;
-    height: 100%;
-}
-
-.footer-container .madeBy-container .social-container span {
-    align-self: center;
-    margin: 10px;
-}
-
-.footer-container .madeBy-container .social-container .social-content ul {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    height: 150px;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.footer-container .madeBy-container .social-container .social-content ul li {
-    list-style: none;
-    cursor: pointer;
-}
-
-.footer-container .partners-container {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-container .partners-container span {
-    margin: 10px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #7159c1;
-    align-self: center;
-}
-
-.footer-container .partners-container ul {
-    margin: 10px;
-    height: 90px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.footer-container .partners-container ul li {
-    list-style: none;
+@media (max-width: 600px) {
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 1000px;
+        width: 100%;
+    }
+    .footer-container .top-container {
+        margin-top: 20px;
+        height: 300px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .footer-container .top-container .social-container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .footer-container .top-container .social-container span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .footer-container .top-container .social-container ul {
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 200px;
+    }
+    .footer-container .top-container .social-container ul li {
+        list-style: none;
+    }
+    .footer-container .top-container .partners-container {
+        height: 600px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-container .top-container .partners-container span {
+        margin-bottom: 20px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .footer-container .top-container .partners-container ul li {
+        list-style: none;
+    }
+    .footer-container .madeBy-container {
+        height: 60px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-container .madeBy-container span {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100%;
+        font-size: 18px;
+        font-weight: bold;
+    }
 }
