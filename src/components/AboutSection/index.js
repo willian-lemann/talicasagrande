@@ -16,7 +16,7 @@ const AboutSection = () => {
             <section className="title-content">
                 <strong>Empresa</strong>
                 <hr className="divisorAboutSection" />
-                <p>Há 25 anos no ramo, construindo sonhos,
+                <p>Há 12 anos no ramo, construindo sonhos,
                 a Talicasa casas nasceu da parceria de dois escritórios
                 comerciais especializados em vendas de casas pré-fabricadas.
                 Hoje a Talicasa trabalha com casas de Madeira e Alverania.
